@@ -45,8 +45,8 @@ console.log('\x1b[32m%s\x1b[0m', `|    🌼 Logged in as ${client.user.username}
 
 const serverCount = client.guilds.cache.size;
 setInterval(() => client.user.setActivity({ 
-  name:`/help | PP09`, 
-  type: ActivityType.Competing }), 10000);
+  name:`/help | PP09 NA TOPIE!`, 
+  type: ActivityType.Playing }), 10000);
 client.errorLog = config.errorLog
   
 }
