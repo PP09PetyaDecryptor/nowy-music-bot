@@ -24,7 +24,7 @@ const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
   name: "help",
-  description: "Get information about the bot",
+  description: "Zobacz informacje o bocie.",
   permissions: "0x0000000000000800",
   options: [],
   run: async (client, interaction) => {
@@ -33,10 +33,10 @@ module.exports = {
 
       const embed = new EmbedBuilder()
          .setColor('#0099ff')
-      .setTitle('💎 Prime Music Bot')
-      .setDescription('Welcome to the Music Bot!\n\n- Here are the available commands:\n\n' +
-        '**/play :** Start playing the songs.\n' +
-        '**/ping :** check bot latency.\n');
+      .setTitle('💎 Muzyczny bot zrobiony przez PP09')
+      .setDescription('Witaj w swiecie muzycznego bota!\n\n- Tu sa dostepne komendy:\n\n' +
+        '**/play :** Pusc utwor.\n' +
+        '**/ping :** Zobacz ping bota.\n');
 
       return interaction.reply({ embeds: [embed] });
     } catch (e) {
